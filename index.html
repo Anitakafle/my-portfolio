@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anita Kafle | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    nav {
+      background-color: #3a86ff;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #3a86ff;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2 {
+      color: #3a86ff;
+      margin-bottom: 1rem;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .about img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .about img:hover {
+      transform: scale(1.05);
+    }
+
+    .about div {
+      flex: 1;
+      min-width: 300px;
+      text-align: justify;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-list, .hobby-list, .projects-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background-color: #3a86ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    .social-links a {
+      color: #3a86ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Anita Kafle</h1>
+    <p>Geomatics Engineering Student | Enthusiast of Mapping, Design, and Technology</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="Anita.jpg" alt="Anita Kafle">
+      <div>
+        <p>I’m Anita Kafle (also known as Sumina Kafle on social media) from Dhulikhel-4, Kavre. A passionate and dedicated final-year undergraduate student of Geomatics Engineering at Kathmandu University. My journey in engineering has been enriched by diverse interests ranging from spatial data analysis to design tools and creative technologies.</p>
+        <p>I strive to merge technical precision with visual storytelling. My goal is to use my knowledge in GIS, mapping, and design tools to make real-world impacts—especially in environmental studies, urban planning, and disaster management.</p>
+        <p>I am a beginner in HTML, CSS, and JavaScript as well as in programming languages such as C, C++, Java, and Python—but I want to learn them in a broader sense. I also have a wish to learn about OpenStreetMapping.</p>
+        <p><strong>Date of Birth:</strong> February 19, 2004 (Wednesday)</p>
+        <p><strong>SEE Passed Year:</strong> 2019<br>
+        <strong>+2 Completed Year:</strong> 2021<br>
+        <strong>Joined KU:</strong> 2021<br>
+        <strong>Graduating Year:</strong> 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Kathmandu University</h3>
+      <p>Bachelor of Engineering in Geomatics Engineering (2021–2025)</p>
+      <p>Key Courses: Remote Sensing, GIS, Photogrammetry, Surveying, Web GIS</p>
+    </div>
+    <div class="card">
+      <h3>Sanjiwani Model Secondary School</h3>
+      <p>+2 in Science Stream (2020–2021)</p>
+    </div>
+    <div class="card">
+      <h3>Mount View Secondary School</h3>
+      <p>Secondary Education Examination (SEE), 2019</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Certifications</h2>
+    <ul class="skills-list">
+      <li>ArcGIS: Map creation, analysis, spatial tools</li>
+      <li>AutoCAD: 2D/3D drawing, design planning</li>
+      <li>Figma: UI/UX wireframing and prototyping</li>
+      <li>HTML, CSS, JavaScript: Web design fundamentals</li>
+      <li>QGIS, Google Earth Engine (Basic)</li>
+      <li>Team Collaboration and Report Writing</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Achievements</h2>
+    <div class="card">
+      <h3>Land Use and Land Cover Mapping Using Satellite Images</h3>
+      <p>Analyzed satellite images to determine land use patterns in Kavrepalanchok District using supervised classification in ArcGIS.</p>
+    </div>
+    <div class="card">
+      <h3>Topographic Map Preparation</h3>
+      <p>Led a group in preparing detailed topographic maps using total station and GNSS survey data.</p>
+    </div>
+    <div class="card">
+      <h3>Figma Design Challenge</h3>
+      <p>Created a complete prototype for a travel blog platform as part of a UI/UX workshop project using Figma.</p>
+    </div>
+    <div class="card">
+      <h3>Volunteer - GIS Day Event, Kathmandu University</h3>
+      <p>Organized spatial games and assisted in workshops for beginners in GIS tools.</p>
+    </div>
+    <div class="card">
+      <h3>Disaster Mapping Using ArcGIS</h3>
+      <p>Analyzed landslide areas using satellite imagery and time-series data through ArcGIS, aiding rapid damage assessment and decision-making.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hobbies & Interests</h2>
+    <ul class="hobby-list">
+      <li>Reading fiction and non-fiction novels</li>
+      <li>Traveling and exploring new cultures and geography</li>
+      <li>Designing interfaces and exploring new tech tools</li>
+      <li>Photography and journaling</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> 9840026029</p>
+      <p><strong>Email:</strong> anitakafle799@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anitakafle" target="_blank">linkedin.com/in/anitakafle</a></p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100009495964552" target="_blank">Sumina Kafle</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/suminakaflee" target="_blank">@suminakaflee</a></p>
+      <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@summenakafle200" target="_blank">@summenakafle200</a></p>
+      <p><strong>Snapchat:</strong> <a href="https://www.snapchat.com/add/summena_kafle" target="_blank">summena_kafle</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anita Kafle | Designed with HTML, CSS & JS</p>
+  </footer>
+</body>
+
+</html>
